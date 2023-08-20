@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----<script src="./demo.js"></script> -->
+</head>
+
+<body>
+
+    <button onclick="abc()">Click</button>
+
+
+    <script>
+
+        /* Primitive datatypes 
+        1.undefined
+        2.string
+        3.null
+        4.boolean
+        5.number*/
+
+        var a =
+            console.log(a)
+
+
+        var a = "Megha"
+        console.log(a)
+
+        var b = 123
+        console.log(b)
+
+
+        var c = null
+        console.log(c)
+
+        console.log(19 < 29)
+
+        let n = 345
+        console.log(n)
+
+        const m = "mehar"
+        console.log(m)
+
+        /* Nonprimitive datatypes
+        Array
+        Object */
+
+        var arr = ['hi', 123, 'megha', 213]
+        console.log(arr)
+
+        let arr1 = [675, 'rajput', 'mehar', 898]
+        console.log(arr1)
+
+        var arr2 = ['girase', 765, 'qwerty', 6788, 4536]
+        console.log(arr2)
+
+        let obj = { name: "megha", address: "pune", age: 25 }
+        console.log(obj)
+
+        var obj1 = { name: "meher", rollno: 43, age: 25 }
+        console.log(obj1)
+
+        const obj2 = { rollno: 35, age: 23, mobno: 8759807865, lname: "Rajput" }
+        console.log(obj2)
+
+
+        function abc() {
+            console.log('message is here')
+        }
+
+        const square = function (number) {
+            return number * number;
+        };
+
+
+
+        console.log(square(4)); // 16
+
+        /*push method = add element in the array in last 
+        
+                array.push(element)*/
+
+        let arry = [123, 'html', 'js', 456]
+        console.log(arry)
+
+        arry.push(890)
+        console.log(arry)
+
+        arry.push('sql', obj)
+        console.log(arry)
+
+        /* pop method = removes the last element from the array
+        
+                array.pop()*/
+
+        arry.pop()
+        console.log(arry)
+
+        /* indexof() = Gives the index no of element
+        
+                console.log(array_name.indexof(element))*/
+
+        const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+        console.log(beasts.indexOf('bison'));
+
+        /* shift method= removes first element from array
+               function= array.shift()*/
+
+        let arry1 = [123, 'meh', 345, 'gha']
+        console.log(arry1)
+
+        let fe = arry1.shift()
+        console.log(arry1)
+
+        /* unshift method= add element in the start of array
+                fuction=array.unshift(element)*/
+
+        let arry2 = [123, 'meh', 345, 'gha']
+        console.log(arry1)
+
+        let ffe = arry2.unshift('mehar')
+        console.log(arry2)
+
+        let arry3 = ['html', 'css', 'js', 'reactjs']
+        arry3.unshift('html')
+        console.log(arry3)
+
+        arry3.shift()
+        console.log(arry3)
+
+        /* find method = The find() method returns the first element in the provided array that satisfies the provided testing function.
+         If no values satisfy the testing function, undefined is returned.*/
+
+        let ar1 = [10, 8, 9, 5, 34]
+        function check(no) {
+            return no < 10
+        }
+        console.log(ar1.find(check))
+
+        let ar2 = [5, 12, 8, 13, 44]
+        function check1(no) {
+            return no > 10
+        }
+        console.log(ar2.find(check1))
+
+        let ar3 = ['h', 'm', 'me', 'n']
+        function str(s) {
+            return s == 'm'
+        }
+        console.log(ar3.find(str))
+
+        let ar4 = [15, 16, 25, 345]
+        let found = ar4.find(element => element > 15)
+        console.log(found)
+
+        /*The filter() method creates a shallow copy of a portion of a given array, 
+        filtered down to just the elements from the given array that pass the test implemented by the provided function. */
+
+        let ages = [33, 32, 40, 45];
+        function check(ages) {
+            return ages >= 18
+        }
+        console.log(ages.filter(check))
+
+        let ar = [10, 20, 23, 9, 13]
+        function checkno(no) {
+            return no < 10
+        }
+        console.log(ar.filter(checkno))
+
+        /* Array of Object */
+        let a1 = [{ name: 'megha', age: 25 }, { mname: 'harshal', age: 28 }, { lname: 'girase' }]
+        console.log(a1)
+
+        let a2 = ['abc', 'defgh', 'ijkl', 'mnopq', 'rstuvw', 'xyzab']
+        let result = a2.find(word => word.length > 4)
+        console.log(result)
+
+        const a3 = [12, 23, 21, 32, 345]
+        const op = no => no > 32
+        console.log(a3.findIndex(op))
+
+        /* The map() method creates a new array populated with the results of calling a provided function
+         on every element in the calling array.*/
+
+        let a4 = [2, 3, 4, 5]
+
+        let map1 = a4.map(x => x * 2)
+        console.log(map1)
+
+        let a8 = [10, 12, 14]
+
+        let map2 = a8.map(x => x - 2)
+        console.log(map2)
+
+
+        /* reduce method
+        total = first element of array
+        num = 2,3 4... element of an array
+        eg. total-num= 200-50=150
+                    150-50=100 */
+
+        const ar5 = [200, 50, 50]
+        console.log(ar5.reduce(func));
+
+        function func(total, num) {
+            return total - num;
+        }
+
+        const ar6 = [25, 20, 1]
+        console.log(ar6.reduce(func1));
+
+        function func1(total, num) {
+            return total + num;
+        }
+
+        const ar7 = [1, 2, 3]
+        console.log(ar7.reduce(func2));
+
+        function func2(total, num) {
+            return total * num;
+        }
+
+        const ar8 = [18, 9, 3]
+        console.log(ar8.reduce(func3));
+
+        function func3(total, num) {
+            return total / num;
+        }
+
+        const ar9 = [100, 50, 100, 20]          /* 100-50=50
+                                                50-100= -50
+                                                -50-20= -70*/
+        console.log(ar9.reduce(func4));
+
+        function func4(total, num) {
+            return total - num;
+        }
+
+        const ar10 = [20, 30, 40, 50]
+        console.log(ar10.reduce(func5));
+
+        function func5(total, num) {
+            return total - num;
+        }
+        
+
+        /* Multi-dimentional array*/
+
+        const multi = [
+            [12, 23, 45, 56, 'hi'],
+            [76, 87, 90, 65, 74, 'hello'],
+            [34, 'mehar', 54, 76, 89, 21, 56]
+        ]
+        console.log(multi);
+
+        console.log(multi[1][1]);
+
+        const multi1 = [
+            [12, 13, 14, 15, 16],
+            [22, 23, 24, 25, 26],
+            [32, 33, 34, 35, 36]
+        ]
+        console.log(multi1);
+        console.log(multi1[2][4]);
+
+        
+    
+
+    </script>
+
+</body>
+
+</html>

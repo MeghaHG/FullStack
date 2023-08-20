@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select id="userlist" style="display: none;"></select>
+
+    <button onclick="getData()">show data</button>
+
+    <script>
+        function getData(){
+            let fetchdata=fetch("https://jsonplaceholder.typicode.com/albums")
+            .then((response)=>{
+                let data= response.json();
+                return data;
+            })
+            .then((albums)=>{
+                document.getElementById("userlist").style.display="block";
+                for(let i=0; i<=albums.length -1; i++){
+                    let option = document.createElement("option")
+                    option.setAttribute("value",albums[i].id);
+
+                    let title=document.createTextNode(albums[i].title)
+                    option.appendChild(title);
+                    document.getElementById("userlist").appendChild(option);
+                }
+            })
+        }
+    </script>
+</body>
+</html>

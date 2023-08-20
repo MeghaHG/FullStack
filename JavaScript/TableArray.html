@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, td, th{
+        border: 1px solid black;
+    }
+
+</style>
+
+<div id="target">
+</div>
+<body>
+ 
+
+    <script>
+        let students=[
+                        {name:'abc', rollno:1, subject:'os'},
+                        {name:'def', rollno:2, subject:'sp'},
+                        {name:'ghi', rollno:3, subject:'cn'},
+                        {name:'jkl', rollno:4, subject:'cpp'}
+                    ];
+        
+        const newTable = document.createElement("table");
+        newTable.innerHTML = "<thead><th>Name</th><th>RollNo</th><th>Subject</th></thead>";
+        for(student of students){
+            const newRow =document.createElement("tr");
+            const tdName =document.createElement("td");
+            const tdRollno =document.createElement("td");
+            const tdSubject =document.createElement("td");
+
+            tdName.textContent = student.name;
+            tdRollno.textContent = student.rollno;
+            tdSubject.textContent = student.subject;
+
+            newRow.appendChild(tdName);
+            newRow.appendChild(tdRollno);
+            newRow.appendChild(tdSubject);
+            newTable.appendChild(newRow);
+        }
+
+        const target = document.getElementById('target');
+        target.appendChild(newTable);
+    </script>
+</body>
+</html>

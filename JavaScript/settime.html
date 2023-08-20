@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            console.log('hi')
+        },3000)
+
+        setTimeout(function(){
+            console.log('html')
+        },4000)
+
+        function alertmsg(){
+            alert("message 1")
+        }
+        setTimeout(alertmsg, 3000);
+
+        function msg1(){
+            document.write("message write")
+        }
+        setTimeout(msg1, 6000);
+
+        function func(){
+            alert("msg for alert")
+        }
+        setTimeout(func, 4000)
+    </script>
+
+    <form >
+    <button type="button" onclick="func()">Message</button>
+    </form>
+</body>
+</html>

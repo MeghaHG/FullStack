@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="item">
+        <option value="">Select an item</option>
+        <option value="item1">HTMl</option>
+        <option value="item2">CSS</option>
+        <option value="item3">Javascript</option>
+    </select>
+
+    <p id="show"></p>
+
+    <script>
+        let source = document.querySelector('#item');
+        let target = document.querySelector('#show');
+
+        source.addEventListener('change', function () {
+            target.textContent = this.value;
+        });
+    </script>
+</body>
+</html>

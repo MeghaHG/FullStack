@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Button Click Example with setTimeout</title>
+    </head>
+    <body>
+        <!-- Create a button with the id "myButton" -->
+        <button id="myButton" type="button">Click Me</button>
+    
+        <!-- Include your JavaScript code -->
+        <script>
+            // JavaScript function to be executed when the button is clicked
+            function handleClick() {
+                // Display an alert after a 2-second delay using setTimeout
+                setTimeout(function() {
+                    alert("Button clicked after 2 seconds!");
+                    // Add more code here if you want to perform other actions after the delay.
+                }, 6000); // 2000 milliseconds (2 seconds) delay
+            }
+    
+            // Get a reference to the button element by its id
+            var button = document.getElementById("myButton");
+    
+            // Add a click event listener to the button, calling the handleClick function when clicked
+            button.addEventListener("click", handleClick);
+        </script>
+    </body>
+    </html>
+     
+</body>
+</html>

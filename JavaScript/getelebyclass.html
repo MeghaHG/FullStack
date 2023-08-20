@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 2px solid black;
+        height: 50px;
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="cls">
+        <p>this is first container</p>
+    </div>
+
+    <div class="cls">
+        <p>this is second container</p>
+    </div>
+
+    <div class="cls">
+        <p>this is third container</p>
+    </div>
+
+    <script>
+
+        //getElementByClassName
+        const collection= document.getElementsByClassName('cls');
+        collection[1].style.backgroundColor = "red";
+
+        //getElementByTagName
+        const collection1= document.getElementsByTagName('p');
+        collection1[2].style.backgroundColor = "blue";
+    </script>
+</body>
+</html>
