@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+     table, td, th{
+        border: 1px solid black;
+    }
+</style>
+
+<script>
+    function addition() {
+        var NO1 = document.getElementById("first").value
+        var NO2 = document.getElementById("second").value
+        var sum = parseInt(NO1) + parseInt(NO2);
+        var tb = document.getElementById("total").innerHTML = sum
+    } 
+
+    function myfunction(){
+        var n1 = document.getElementById("td1").value
+        var n2 = document.getElementById("td2").value
+        var total1=n1 + n2;
+        var total2=document.getElementById("t").innerHTML = total1
+    }
+</script>
+ 
+<table id="t">
+    <tr>
+        <th id="th1">first_no</th>
+        <th id=th2>second_no</th>
+    </tr>
+
+    <tr>
+        <td id="td1">30</td>
+        <td id ="td2">40</td>
+    </tr>
+</table>
+<br>
+<button type="button" onclick="myfunction()">Addition</button>
+
+<body>
+    <form>
+        <p> Enter First No:<input id="first"></p>
+        <br>
+        <p> Enter Second NO:<input id="second"></p>
+        <br>
+        <button onclick="addition()" type="button">ADD</button>
+        <p id="total"></p>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="login">
+        <input type="text" placeholder="Username" name="t1" id="text1">
+        <br>
+        <br>
+        <input type="password" placeholder="Password" name="t2" id="text2" />
+        <br>
+        <br>
+        <input type="button" onclick="return form1(this.form)" value="Login" />
+    </form>
+    <p id="print1"></p>
+
+    <script>
+        function form1(form) {
+            if (form.t1.value == "megha" && form.t2.value == "mehar") {
+                console.log("login done");
+                alert(form.t1.value + " " + form.t2.value)
+                return true;
+            }
+            else {
+                alert("validation failed");
+                return false;
+            }
+        }
+    </script>
+
+
+    <!--- <script>
+        let password;
+        let username;
+
+        do{
+            username=prompt('Enter Username')
+            password=prompt('Enter password')
+        }while(username!='abcd' && password!='Pass')
+    </script>---->
+</body>
+
+</html>

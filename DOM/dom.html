@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="p1"></h1>
+
+    <h2 id="p2"></h2>
+
+    <p id="p3"></p>
+
+    <p id="p4"></p>
+
+    <p id="p5"></p>
+
+    <p class="p7"></p>
+    <input type="checkbox" onclick="func5()">
+
+    <label for="">First Name : </label>
+        <input type="text" placeholder="Enter First Name">
+        <br>
+        <br>
+
+        <label for="">Middle Name : </label>
+        <input type="text" placeholder="Enter Middle Name">
+        <br>
+        <br>
+
+        <label for="">Last Name : </label>
+        <input type="text" placeholder="Enter Last Name">
+        <br>
+        <br>
+
+        <label for="">Password : </label>
+        <input type="password" placeholder="Enter Password">
+        <br>
+        <br>
+
+        <label for="">Email id : </label>
+        <input type="email" placeholder="Enter Email id">
+        <br>
+        <br>
+
+        <label for="">Mobile no : </label>
+        <input type="text" placeholder="Enter Mobile No">
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+        
+
+    <button onclick="func()">SUB</button>
+
+    <input type="checkbox"  id="n" onclick="func2()">
+    <input type="checkbox"  id="n" onclick="func3()">
+    <input type="checkbox"  id="n" onclick="func4()">
+    
+
+    <script>
+        document.getElementById('p1').innerHTML="Hello"
+
+        document.getElementById('p2').innerHTML="dom"
+
+        document.getElementById('p3').innerHTML=12+12
+
+       function func(){
+            document.getElementById('p4').innerHTML=21-6     
+        }
+
+        function func2(){
+            document.getElementById('p5').innerHTML="hello"
+        }
+
+        function func3(){
+            document.getElementById('p5').innerHTML=""
+        }
+
+        function func4(){
+            document.getElementById('p6').innerHTML=""
+        }
+
+        function func4(){
+            document.getElementsByClassName("p7")
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

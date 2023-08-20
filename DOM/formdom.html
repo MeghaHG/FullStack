@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printvalue(){
+            var name=document.form1.name.value;
+            var name1=document.form1.name1.value;
+            var pass=document.form1.pass.value;
+            alert("welcome:" +name +name1 +pass);
+            document.getElementById('print').innerHTML=name +"<br />" +name1 +"<br />" +pass
+        }
+    </script>
+    <p id="print"></p>
+    <form name="form1">
+        Enter Name: <input type="text" name="name"/>
+        <br>
+        <br>
+        Enter Last Name: <input type="text" name="name1"/>
+        <br>
+        <br>
+        Enter Passward: <input type="password" name="pass"/>
+        <br>
+        <br>
+        <input type="button" onclick="printvalue()" value="Add Data"/>
+    </form>
+</body>
+</html>

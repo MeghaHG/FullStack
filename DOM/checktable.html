@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>         
+<body>
+    <script>
+        function addition(){
+            let n1=document.getElementById("n1").value
+            let total= parseInt(n1)
+            let tb = document.getElementById("print").innerHTML = total
+        }
+
+        function addition1(){
+            let n1=document.getElementById("n1").value
+            let n2=document.getElementById("n2").value
+            
+            let total=parseInt(n1) + parseInt(n2)
+            let tb = document.getElementById("print").innerHTML = total
+            
+        }
+
+        function addition2(){
+            let n1=document.getElementById("n1").value
+            let n2=document.getElementById("n2").value
+            let n3=document.getElementById("n3").value
+            let total=parseInt(n1) + parseInt(n2) + parseInt(n3)
+            let tb = document.getElementById("print").innerHTML = total
+            
+        }
+
+        function addition3(){
+            let n1=document.getElementById("n1").value
+            let n2=document.getElementById("n2").value
+            let n3=document.getElementById("n3").value
+            let n4=document.getElementById("n4").value
+            let total=parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4)
+            let tb = document.getElementById("print").innerHTML = total
+            
+        }
+
+
+
+    </script>
+    
+
+    <table border="1px solid black"; width="20%" style="background-color: cornflowerblue;">
+        <th>Numbers</th>
+        <th>Checkbox</th>
+
+        <tr>
+            <td><input type="number" id="n1"></td>
+            <td><input type="checkbox" onclick="addition()"></td>
+        </tr>
+
+        <tr> 
+            <td><input type="number" id="n2"></td>
+            <td><input type="checkbox" onclick="addition1()"></td>
+        </tr>
+
+        <tr> 
+            <td> <input type="number" id="n3"></td>
+            <td><input type="checkbox" onclick="addition2()"></td>
+        </tr>
+
+        <tr> 
+            <td ><input type="number" id="n4"></td>
+            <td><input type="checkbox" onclick="addition3()"></td>
+        </tr>
+
+        <p id="print"></p>
+    </table>
+  
+</body>
+</html>

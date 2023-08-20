@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function DisplayResult(){
+           let maths= document.getElementById("maths").value
+           let compnet= document.getElementById("cn").value
+           let sysprog= document.getElementById("sp").value
+           let operatsys= document.getElementById("os").value
+
+           let total= parseFloat(maths) +  parseFloat(compnet) + parseFloat(sysprog) + parseFloat(operatsys)
+           //console.log(total)//
+
+          
+
+           let td1= document.getElementById("td1").innerHTML=maths;
+           let td2= document.getElementById("td2").innerHTML=compnet;
+           let td3= document.getElementById("td3").innerHTML=sysprog;
+           let td4= document.getElementById("td4").innerHTML=operatsys;
+           let td5= document.getElementById("td5").innerHTML=total;
+
+       
+        }
+    </script>
+    <form>
+
+        <label for="maths">Maths</label>
+        <input id="maths" type="number"> <br><br>
+
+        <label for="cn">Computer Network</label>
+        <input id="cn" type="number"> <br><br>
+
+        <label for="sp">System programming</label>
+        <input id="sp" type="number"> <br><br>
+
+        <label for="os">Operating System</label>
+        <input id="os" type="number"> <br><br>
+
+        <button type="button" onclick="DisplayResult()">Submit</button>
+        <p id="totalis"></p> 
+    </form>
+   
+    <table border="1px solid black"; width="50%">
+
+        <tr>
+            <th>maths</th>
+            <th>cn</th>
+            <th>sp</th>
+            <th>os</th>
+            <th>total</th>
+        </tr>
+
+        <tr>
+            <td id="td1"></td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+            <td id="td5" ></td>
+        </tr>
+    </table>
+
+        
+</body>
+</html>
